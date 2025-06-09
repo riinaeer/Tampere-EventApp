@@ -1,8 +1,8 @@
-# EventApp
+# EventApp (Fall 2024)
 
 ## Project Overview
 
-**EventApp** is a JavaFX-based application that provides an interface for displaying events and weather information. The application fetches event data from the **Visit Tampere API** and weather data from the **OpenWeatherMap API**. It displays all events on the main page, categorized and filtered based on user preferences and weather conditions. Additionally, it provides a 5-day weather information to help users plan their activities.
+**EventApp** is a JavaFX-based application that provides an interface for displaying events and weather information. The application fetches event data from the **Visit Tampere API** and weather data from the **OpenWeatherMap API**. It displays all events on the main page, categorized and filtered based on user preferences and weather conditions. Additionally, it provides a 5-day weather information to help users plan their activities. This is a school project with team of four developers on fall 2024.
 
 ---
 
