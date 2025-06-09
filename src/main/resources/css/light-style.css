@@ -1,0 +1,298 @@
+* {
+  -fx-bg-color: #d2eef7;
+  -fx-bg1-color: #BBEBFF;
+  -fx-bg2-color: #DACEC5;
+  -fx-focus-color: #96b4c7;
+  -fx-text-fill: black;
+  -fx-background-radius: 15;
+  -fx-border-radius: 15;
+}
+
+/* Root styles */
+.root {
+  -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, -fx-bg1-color, -fx-bg2-color);
+  -fx-background-radius: 0;
+  -fx-border-radius: 0;
+}
+
+/* General styles */
+.button {
+  -fx-font-weight: bold;
+}
+.button:hover {
+  -fx-background-color: -fx-focus-color;
+}
+
+.search-button {
+  -fx-background-image: url("/icons/search.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+  -fx-background-size: 16px auto;
+  -fx-padding: 6px 16px;
+}
+
+.left-arrow-button {
+  -fx-background-image: url("/icons/left.png");
+}
+
+.right-arrow-button {
+  -fx-background-image: url("/icons/right.png");
+}
+
+.left-arrow-button, .right-arrow-button {
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+  -fx-background-size: auto 16px;
+  -fx-padding: 8px 16px;
+}
+
+.toggle-theme-button {
+  -fx-background-image: url("/icons/sun.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+  -fx-background-size: 16px auto;
+  -fx-padding: 6px 16px;
+}
+
+.location-icon {
+  -fx-background-image: url("/icons/location.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+  -fx-background-size: auto 20px;
+  -fx-pref-width: 20px;
+  -fx-pref-height: 20px;
+}
+
+/* Box styles */
+.weather-view-box, .event-view-box {
+  -fx-padding: 10 50;
+}
+
+.location-box, .date-picker, .button, .search-field, .category-box {
+  -fx-background-color: -fx-bg-color;
+  -fx-effect: dropshadow(gaussian, #ffffff40, 4, 0, 4, 4);
+}
+
+.day-box, .temperature-box {
+  -fx-background-color: #ffffff4d;
+}
+
+.left-box, .right-box, .event-card {
+  -fx-background-color: #b2ccdc99;
+}
+
+.left-box, .right-box, .event-card, .day-box, .temperature-box, .location-box, .date-picker, .button, .search-field, .category-box, .left-button, .right-button {
+  -fx-effect: innershadow(gaussian, #00000040, 4, 0, 0.1, 2);
+  -fx-border-width: 2;
+  -fx-border-color: #ffffff66;
+  -fx-border-style: solid;
+}
+
+.left-box, .right-box, .event-card, .day-box, .temperature-box {
+  -fx-effect: dropshadow(gaussian, #00000040, 4, 0, 0, 4);
+  -fx-padding: 20 30;
+}
+
+.left-box {
+  -fx-spacing: 20;
+  -fx-min-width: 350;
+}
+
+.day-box {
+  -fx-pref-width: 300;
+  -fx-padding: 6 20;
+}
+
+/* Text styles */
+.label {
+  -fx-font-size: 24px;
+  -fx-text-fill: black;
+  -fx-font-weight: bold;
+}
+
+.no-data-label {
+  -fx-font-size: 16px;
+  -fx-font-weight: bold;
+  -fx-text-alignment: center;
+}
+
+.day-label {
+  -fx-font-size: 16px;
+  -fx-font-weight: 400;
+}
+
+.event-title, .forecast-title {
+  -fx-text-alignment: center;
+  -fx-font-size: 20px;
+}
+
+.event-description {
+  -fx-font-size: 14px;
+  -fx-padding: 10 0;
+}
+
+.event-description {
+  -fx-text-alignment: center;
+}
+
+.event-date {
+  -fx-wrap-text: false;
+  -fx-background-color: #ffffff4d;
+  -fx-padding: 6 10;
+  -fx-background-radius: 10;
+  -fx-min-width: 100;
+}
+
+.label.temperature-label {
+  -fx-font-size: 36px;
+}
+
+.location-label, .event-description {
+  -fx-font-size: 16px;
+  -fx-font-weight: 400;
+  -fx-wrap-text: true;
+}
+
+.event-location, .event-date {
+  -fx-font-size: 16px;
+  -fx-font-weight: 400;
+  -fx-text-alignment: center;
+}
+
+.date-location-box {
+  -fx-alignment: center;
+}
+
+.scroll-pane .scroll-bar .thumb, .combo-box-popup .list-view .scroll-bar .thumb {
+  -fx-background-color: -fx-focus-color;
+}
+
+.search-field, .category-box {
+  -fx-font-size: 16px;
+}
+
+.search-field:focused, .category-box:focused {
+  -fx-border-color: white;
+  -fx-border-width: 1;
+}
+
+/* Scroll pane styles */
+.scroll-pane, .scroll-pane .viewport {
+  -fx-background-color: transparent;
+}
+
+/* Date picker styles */
+.date-picker {
+  -fx-font-size: 14px;
+  -fx-padding: 0 2;
+}
+
+.date-picker-popup, .calendar-grid {
+  -fx-background-color: transparent;
+}
+
+.date-picker > .text-field {
+  -fx-font-size: 1.2em;
+  -fx-background-color: transparent;
+  -fx-alignment: center;
+}
+
+.date-picker .cell:hover, .date-picker .selected {
+  -fx-background-color: -fx-focus-color;
+}
+
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow {
+  -fx-background-color: black;
+}
+
+.date-picker .arrow-button {
+  -fx-background-color: white;
+  -fx-background-radius: 12;
+}
+ 
+.date-picker .arrow-button:hover {
+  -fx-background-color: -fx-focus-color;
+}
+ 
+.date-picker .arrow-button .arrow {
+  -fx-background-color: black;
+}
+
+.date-picker .cell {
+  -fx-background-color: #ffffff4d;
+  -fx-background-radius: 0;
+  -fx-border-radius: 0;
+}
+
+.date-picker-popup > .month-year-pane {
+  -fx-background-color: transparent;
+}
+
+/* Combo box styles */
+.combo-box-popup .list-cell {
+  -fx-background-color: transparent;
+}
+
+.combo-box-popup .list-view {
+  -fx-background-color: #dff5f9;
+}
+
+.combo-box-popup .list-view .scroll-bar {
+  -fx-pref-width: 11;
+}
+
+.combo-box-popup .list-view .list-cell 
+{
+  -fx-padding: 4 10;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover {
+  -fx-background-color: -fx-focus-color;
+  -fx-text-fill: white;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover {
+  -fx-background-color: -fx-focus-color;
+  -fx-text-fill: white;
+}
+
+/* Shortened descriptions */
+.event-description {
+  -fx-font-size: 16px;
+  -fx-wrap-text: true;
+  -fx-text-alignment: center;
+  -fx-max-height: 90px;
+  -fx-overflow: hidden;
+  -fx-font-weight: normal;
+}
+
+.event-full-description {
+  -fx-font-size: 16px;
+  -fx-wrap-text: true;
+  -fx-text-alignment: center;
+  -fx-background-color: #ffffff4d;
+  -fx-border-color: rgba(0, 0, 0, 0.2);
+  -fx-border-width: 1px;
+  -fx-border-radius: 10;
+  -fx-padding: 10;
+  -fx-font-weight: normal;
+  -fx-background-color: #ffffff1a;
+}
+
+.read-more-button {
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+  -fx-padding: 6 12;
+  -fx-background-color: #5984a19f;
+  -fx-text-fill: white;
+  -fx-border-radius: 15;
+  -fx-cursor: pointer;
+  -fx-alignment: center;
+  -fx-margin-top: auto;
+}
+
+
+.read-more-button:hover {
+  -fx-background-color: #28495f9f;
+}
